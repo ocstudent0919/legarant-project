@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Legarant_Essentiel</fullName>
+        <default>false</default>
+        <label>Legarant Essentiel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legarant_Premium</fullName>
+        <default>false</default>
+        <label>Legarant Premium</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legarant_Elite</fullName>
+        <default>false</default>
+        <label>Legarant Elite</label>
+    </standardValue>
+</StandardValueSet>

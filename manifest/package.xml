@@ -1,36 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
-        <name>ApexClass</name>
+        <members>Legarant</members>
+        <name>CustomApplication</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexComponent</name>
+        <members>Account.Password__c</members>
+        <members>Account.CustomerEmail__c</members>
+        <members>Contact.Active__c</members>
+        <members>Contact.CustomerID__c</members>
+        <members>Contract.Product__c</members>
+        <members>Product2.Price__c</members>
+        <name>CustomField</name>
+    </types>
+    <types> 
+        <members>Product2Family</members> 
+        <name>StandardValueSet</name> 
     </types>
     <types>
-        <members>*</members>
-        <name>ApexPage</name>
+        <members>Account-Legarant Account Layout</members>
+        <members>Contact-Legarant Contact Layout</members>
+        <members>Contract-Legarant Contract Layout</members>
+        <members>Product2-Legarant Product Layout</members>
+        <name>Layout</name>
+    </types> 
+    <types>
+        <members>Account.LegarantAccounts</members>
+        <members>Contact.LegarantContacts</members>
+        <members>Contract.LegarantContracts</members>
+        <members>Product2.LegarantProducts</members>
+        <name>ListView</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
+        <members>Account.Legarant_Account</members>
+        <members>Contact.Legarant_Contact</members>
+        <members>Contract.Legarant_Contract</members>
+        <members>Product2.Legarant_Product</members>
+        <name>RecordType</name>
+    </types>    
+    <types>
+        <members>Legarant_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>  
+    <types>
+        <members>legarant_icon</members>
+        <name>ContentAsset</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
+        <members>Legarant</members>
+        <name>PermissionSet</name>
     </types>
-    <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>StaticResource</name>
-    </types>
-    <version>52.0</version>
+    <version>53.0</version>
 </Package>
