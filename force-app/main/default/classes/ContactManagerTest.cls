@@ -3,7 +3,15 @@ private class ContactManagerTest {
     static String URI = 'https://empathetic-hawk-424pxk-dev-ed.my.salesforce.com/services/apexrest/Contacts/';
     @isTest
     static void testDeactivateContact() {
+        // Create new Contact record
         Id recordId = Helper.createContactTestRecord();
+        // Verify new Contact record is active
+        Contact thisContact = [
+            SELECT Active__c
+            FROM Contact
+            WHERE Id = :recordId
+        ];
+        System.assert(thisContact.Active__c == true);
         // Set up a test request
         RestRequest request = new RestRequest();
         request.requestUri = URI + recordId;
@@ -12,11 +20,7 @@ private class ContactManagerTest {
         // Call the method to test
         ContactManager.deactivateContact();
         // Verify Contact record is deactivated
-        Contact thisContact = [
-            SELECT Active__c
-            FROM Contact
-            WHERE Id = :recordId
-        ];
+        thisContact = [SELECT Active__c FROM Contact WHERE Id = :recordId];
         System.assert(thisContact.Active__c == false);
     }
 
