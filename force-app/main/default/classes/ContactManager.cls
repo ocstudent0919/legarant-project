@@ -1,6 +1,6 @@
 @RestResource(urlMapping='/Contacts/*')
 global with sharing class ContactManager {
-    @HttpPut
+    @HttpPost
     global static ID createContact(String firstName, String lastName,
         String email, String phone, String accountId) {
         Contact newContact = new Contact();
